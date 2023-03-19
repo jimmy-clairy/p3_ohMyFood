@@ -1,6 +1,7 @@
 @import "./utils/variable";
 @import "./utils/mixin";
 
+@import "./base/reset";
 @import "./base/base";
 @import "./base/loader";
 @import "./base/animation";
@@ -13,3 +14,5 @@
 
 @import "./pages/home";
 @import "./pages/page";
+
+@import"./base/fonts";
