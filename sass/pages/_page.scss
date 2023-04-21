@@ -1,106 +1,115 @@
 // MAIN
-
 .main__img {
     width: 100%;
-    margin-top: 72px;
-    padding: 0;
-    height: 330px;
+    margin-top: 8rem;
+    height: 50vh;
     object-fit: cover;
-    @include breakpointSmall { height: 500px;}  
-}
-// MENU
 
+    @include breakpointSmall {
+        height: 50rem;
+    }
+}
+
+// MENU
 .menu {
-    margin-top: -75px;
+    margin-top: -8rem;
     position: relative;
     background-color: lighten($cl-fourth, 75);
     border-radius: 50px 50px 0 0;
-    padding: 0 3% 70px;
-    @include breakpointSmall { 
+    padding: 0 5% 7rem;
+
+    @include breakpointSmall {
         width: 85%;
         margin-left: auto;
         margin-right: auto;
     }
+
     &__header {
-        letter-spacing: 1px;
+        padding-top: 2rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
     &__heading {
         font-family: 'Shrikhand', cursive;
-        font-size: 1.7em;
-        margin-top: 50px;
+        font-size: clamp(2.2rem, 7vw, 3rem);
+        letter-spacing: 2px;
     }
-    &__heart {
-        padding-top: 30px;
-        padding-right: 20px;
-    }
+
     &__button {
-        padding: 15px 50px;
-        margin-top: 50px;
+        padding: 1.5rem 5rem;
+        margin-top: 5rem;
     }
 }
 
 .all {
-    @include breakpointMedium { 
+    @include breakpointMedium {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     &__div {
-        margin: 10px;
-        @include breakpointMedium { width: 45%;}
-        @include breakpointLarge { width: 30%;}
+        @include breakpointMedium {
+            width: 47%;
+        }
+
+        @include breakpointLarge {
+            width: 30%;
+        }
     }
 }
 
 // SUBMENU
 
 .submenu {
+    font-size: 1.8rem;
     font-weight: 400;
     border-bottom: 3px solid $cl-tertiary;
-    padding-bottom: 5px;
-    width: 40px;
-    
+    padding-bottom: .5rem;
+    width: 4rem;
+
     &__container {
         background-color: $cl-white;
-        border-radius: 10px;
-        padding: 12px;
-        height: 65px;
+        border-radius: $border-rad;
+        padding: 1.2rem;
+        min-height: 6.5rem;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         overflow: hidden;
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
         position: relative;
         cursor: pointer;
     }
+
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 90%;
+        width: calc(100% - 4rem);
         transition: all 500ms;
     }
+
     &__heading {
-        margin: 0;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;  
+        font-size: 1.6rem;
     }
+
+    &__heading,
     &__paragraph {
-        margin: 0;
-        font-size: 0.9em;
+        margin: .5rem 0;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
+
+    &__paragraph {
+        font-size: 1.5rem;
+    }
+
     &__price {
         font-weight: bolder;
-        padding-right:20px;
         transition: all 500ms;
-        position: absolute;
-        right: 0;
-        bottom: 12px;
-    }  
+    }
 }

@@ -8,43 +8,45 @@
     <meta name="description" content="OhMyFood application de réservation de restaurants en ligne">
     <script src="https://kit.fontawesome.com/288135bec0.js" crossorigin="anonymous" defer></script>
 
-    <link href="css/style.css" rel="stylesheet">
-    <title>La palette du goût</title>
-    <link rel="icon" type="image/png" href="./pictures/J.png">
+    <link href="../css/style.css" rel="stylesheet" media="all">
+    <title>Le délice des sens</title>
+    <link rel="icon" type="image/png" href="../pictures/J.png">
+    <script src="../js/app.js" defer></script>
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
-        <a class="header__icon" href="index.html" aria-label="arrow left"><i class="fa-solid fa-arrow-left"></i></a>
-        <a class="header__link" href="index.html"><img class="header__logo" src="./pictures/logo/ohmyfood.png"
+        <a class="header__icon" href="../index.html" aria-label="arrow left"><i class="fa-solid fa-arrow-left"></i></a>
+        <a class="header__link" href="../index.html"><img class="header__logo" src="../pictures/logo/ohmyfood.png"
                 alt="logo" width="170" height="30"></a>
     </header>
     <!-- MAIN-IMAGE -->
 
-    <img class="main__img" src="./pictures/restaurants-width-1280px/jay-wennington-compressed.jpg"
+    <img class="main__img" src="../pictures/restaurants-width-1280px/louis-hansel-compressed.jpg"
         alt="Photo restaurant">
 
     <!-- MENU -->
     <section class="menu container">
         <div class="menu__header">
-            <h1 class="menu__heading">La palette du goût</h1>
-            <div class="heart menu__heart">
-                <i class="heart__icon fa-regular fa-heart"><i class="heart__icon-hidden fa-solid fa-heart"></i></i>
+            <h1 class="menu__heading">Le délice des sens</h1>
+            <div class="heart">
+                <i class="heart__icon fa-regular fa-heart"></i>
+                <i class="heart__icon-hidden fa-solid fa-heart"></i>
             </div>
         </div>
 
         <div class="all">
             <!-- ENTER -->
             <section class="all__div">
-                <h4 class="submenu">ENTRÉES</h4>
+                <h2 class="submenu">ENTRÉES</h2>
                 <!-- DIV-1 -->
                 <div class="submenu__container">
                     <div class="submenu__content">
-                        <h4 class="submenu__heading">Fricassée d'escargot</h4>
-                        <p class="submenu__paragraph">Au piment d'Espelette</p>
+                        <h3 class="submenu__heading">Tartare de thon</h3>
+                        <p class="submenu__paragraph">Assaisonné au yuzu</p>
                     </div>
-                    <div class="submenu__price">25€</div>
+                    <span class="submenu__price">25€</span>
                     <div class="animation">
                         <i class="animation__icon fa-solid fa-check"></i>
                     </div>
@@ -52,10 +54,10 @@
                 <!-- DIV-2 -->
                 <div class="submenu__container">
                     <div class="submenu__content">
-                        <h4 class="submenu__heading">Foie gras de canard mi-cuit</h4>
-                        <p class="submenu__paragraph">Et ses copeaux de truffe noire</p>
+                        <h3 class="submenu__heading">Bouchée de homard croustillant</h3>
+                        <p class="submenu__paragraph">Et sa farandole de petits légumes</p>
                     </div>
-                    <div class="submenu__price">35€</div>
+                    <span class="submenu__price">35€</span>
                     <div class="animation">
                         <i class="animation__icon fa-solid fa-check"></i>
                     </div>
@@ -63,10 +65,10 @@
                 <!-- DIV-3 -->
                 <div class="submenu__container">
                     <div class="submenu__content">
-                        <h4 class="submenu__heading">Oeuf au plat</h4>
-                        <p class="submenu__paragraph">Assaionné à la truffe sur lit de caviar</p>
+                        <h3 class="submenu__heading">Velouté de cèpe</h3>
+                        <p class="submenu__paragraph">Aux truffes</p>
                     </div>
-                    <div class="submenu__price">20€</div>
+                    <span class="submenu__price">20€</span>
                     <div class="animation">
                         <i class="animation__icon fa-solid fa-check"></i>
                     </div>
@@ -75,14 +77,14 @@
 
             <!-- DISHES -->
             <section class="all__div">
-                <h4 class="submenu">PLATS</h4>
+                <h2 class="submenu">PLATS</h2>
                 <!-- DIV-1 -->
                 <div class="submenu__container">
                     <div class="submenu__content">
-                        <h4 class="submenu__heading">Filet de boeuf aux herbes</h4>
-                        <p class="submenu__paragraph">Accopagné de sa ribambelle de légumes</p>
+                        <h3 class="submenu__heading">Poulet rôti aux herbes de Provence</h3>
+                        <p class="submenu__paragraph">Et sa crème de truffe</p>
                     </div>
-                    <div class="submenu__price">40€</div>
+                    <span class="submenu__price">40€</span>
                     <div class="animation">
                         <i class="animation__icon fa-solid fa-check"></i>
                     </div>
@@ -90,10 +92,10 @@
                 <!-- DIV-2 -->
                 <div class="submenu__container">
                     <div class="submenu__content">
-                        <h4 class="submenu__heading">Parmentier de queue de boeuf</h4>
-                        <p class="submenu__paragraph">À la truffe noire sur sa purée de panais</p>
+                        <h3 class="submenu__heading">Langouste rôtie</h3>
+                        <p class="submenu__paragraph">Et ses légumes de saison</p>
                     </div>
-                    <div class="submenu__price">35€</div>
+                    <span class="submenu__price">35€</span>
                     <div class="animation">
                         <i class="animation__icon fa-solid fa-check"></i>
                     </div>
@@ -101,10 +103,10 @@
                 <!-- DIV-3 -->
                 <div class="submenu__container">
                     <div class="submenu__content">
-                        <h4 class="submenu__heading">Filet de turbot</h4>
-                        <p class="submenu__paragraph">Aux agrumes</p>
+                        <h3 class="submenu__heading">Côte de boeuf Angus</h3>
+                        <p class="submenu__paragraph">Et sa purée de panais</p>
                     </div>
-                    <div class="submenu__price">44€</div>
+                    <span class="submenu__price">44€</span>
                     <div class="animation">
                         <i class="animation__icon fa-solid fa-check"></i>
                     </div>
@@ -113,14 +115,14 @@
 
             <!-- DESSERTS -->
             <section class="all__div">
-                <h4 class="submenu">DESSERTS</h4>
+                <h2 class="submenu">DESSERTS</h2>
                 <!-- DIV-1 -->
                 <div class="submenu__container">
                     <div class="submenu__content">
-                        <h4 class="submenu__heading">Paris-Brest</h4>
-                        <p class="submenu__paragraph">Revisité</p>
+                        <h3 class="submenu__heading">Farandole de desserts</h3>
+                        <p class="submenu__paragraph">Du chef</p>
                     </div>
-                    <div class="submenu__price">18€</div>
+                    <span class="submenu__price">18€</span>
                     <div class="animation">
                         <i class="animation__icon fa-solid fa-check"></i>
                     </div>
@@ -128,10 +130,10 @@
                 <!-- DIV-2 -->
                 <div class="submenu__container">
                     <div class="submenu__content">
-                        <h4 class="submenu__heading">Macaron au chocolat d'exception</h4>
-                        <p class="submenu__paragraph">Et glace à la vanille de Madagascar</p>
+                        <h3 class="submenu__heading">Crème brulée</h3>
+                        <p class="submenu__paragraph">Revisitée</p>
                     </div>
-                    <div class="submenu__price">22€</div>
+                    <span class="submenu__price">22€</span>
                     <div class="animation">
                         <i class="animation__icon fa-solid fa-check"></i>
                     </div>
@@ -139,10 +141,10 @@
                 <!-- DIV-3 -->
                 <div class="submenu__container">
                     <div class="submenu__content">
-                        <h4 class="submenu__heading">Mousse au chocolat</h4>
-                        <p class="submenu__paragraph">Au piment d'Espelette et à la truffe noire</p>
+                        <h3 class="submenu__heading">Tiramisu</h3>
+                        <p class="submenu__paragraph">À la noisette</p>
                     </div>
-                    <div class="submenu__price">23€</div>
+                    <span class="submenu__price">23€</span>
                     <div class="animation">
                         <i class="animation__icon fa-solid fa-check"></i>
                     </div>
@@ -156,7 +158,7 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container">
-            <a href="index.html">
+            <a href="../index.html">
                 <h3 class="footer__heading">ohmyfood</h3>
             </a>
             <a href="#" class="footer__link"><i class="footer__icon fa-solid fa-utensils"></i> Proposer un

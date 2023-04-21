@@ -1,11 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
+    font-size: 62.5%;
     scroll-behavior: smooth;
     user-select: none;
 }
 
-* {
-    box-sizing: border-box;
+body {
+    font-size: 1.6em;
     font-family: 'roboto', sans-serif;
+    color: #333;
 }
 
 a {

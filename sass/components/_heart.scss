@@ -1,27 +1,35 @@
 .heart {
-    &__icon {
-        font-size: 25px;
-        position: relative;
+    position: relative;
+    cursor: pointer;
+
+    &:hover>.heart__icon,
+    &.active>.heart__icon {
+        opacity: 0;
     }
+
+    &:hover>.heart__icon-hidden,
+    &.active>.heart__icon-hidden {
+        opacity: 1;
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+        position: absolute;
+        transition: .5s;
+    }
+
     &__icon-hidden {
-        font-size: 27px;
-        background: linear-gradient(to bottom, $cl-secondary 0%,$cl-primary 100%);
-        background: -webkit-linear-gradient(bottom, $cl-secondary 0%,$cl-primary 100%); 
-        // background:-moz-linear-gradient(bottom, #e72c83 0%, #a742c6 100%);
-    
+        font-size: 2.5rem;
+        background: linear-gradient($cl-secondary , $cl-primary);
+        background: -webkit-linear-gradient($cl-secondary , $cl-primary);
+        background: -moz-linear-gradient(#e72c83, #a742c6);
+
         background-clip: text;
         -webkit-background-clip: text;
-        // -moz-background-clip: text;
-        -webkit-text-fill-color:transparent;
-        
-        position: absolute;
-        cursor: pointer;
-        left: -1px;
-        top: -1px;
-        transition: 500ms;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        transition: .5s;
         opacity: 0;
-        &:hover {
-            opacity: 1;     
-        }
     }
 }

@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhMyFood</title>
     <meta name="description" content="OhMyFood application de réservation de restaurants en ligne">
-
     <script src="https://kit.fontawesome.com/288135bec0.js" crossorigin="anonymous" defer></script>
-
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./pictures/J.png">
-
-    <title>OhMyFood</title>
+    <script src="js/app.js" defer></script>
 </head>
 
 <body>
@@ -65,13 +63,13 @@
     <!-- LOCATION -->
     <div class="location">
         <i class="location__icon fa-solid fa-location-dot"></i>
-        <p class="location__paragraph">Paris, Belleville</p>
+        <input type="text" class="location__input" placeholder="Paris, Belleville"></input>
     </div>
 
     <!-- BOOK -->
     <div class="book">
         <h1 class="book__heading">Réservez le menu qui vous convient</h1>
-        <p class="book__paragraph">Découvrez des restaurants d'exception, séléctonnés par nos soins.</p>
+        <p class="book__p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         <a class="button" href="#restaurants">Explorer nos restaurants</a>
     </div>
 
@@ -82,17 +80,17 @@
             <div class="function__div">
                 <p class="function__number">1</p>
                 <i class="function__icon fa-solid fa-mobile-screen-button"></i>
-                <p class="function__paragraph">Choisissez un restaurant</p>
+                <p class="function__p">Choisissez un restaurant</p>
             </div>
             <div class="function__div">
                 <p class="function__number">2</p>
                 <i class="function__icon fa-solid fa-list-ul"></i>
-                <p class="function__paragraph">Composez votre menu</p>
+                <p class="function__p">Composez votre menu</p>
             </div>
             <div class="function__div">
                 <p class="function__number">3</p>
                 <i class="function__icon fa-solid fa-store"></i>
-                <p class="function__paragraph">Dégustez au restaurant</p>
+                <p class="function__p">Dégustez au restaurant</p>
             </div>
         </div>
     </div>
@@ -104,72 +102,72 @@
             <div class="main__cards">
                 <!-- CARD-1 -->
                 <div class="card">
-                    <a href="la-palette-du-gout.html" class="card__link">
+                    <a href="html/la-palette-du-gout.html" class="card__link">
                         <img class="card__img" src="./pictures/restaurants-width-600px/jay-wennington-compressed.webp"
                             alt="photo restaurant">
                         <div class="card__new">Nouveau</div>
                         <div class="card__contents">
                             <div class="card__text">
                                 <h3 class="card__heading">La palette du goût</h3>
-                                <p class="card__paragraph">Ménilmontant</p>
+                                <p class="card__p">Ménilmontant</p>
                             </div>
                             <div class="heart">
-                                <i class="heart__icon fa-regular fa-heart"><i
-                                        class="heart__icon-hidden fa-solid fa-heart"></i></i>
+                                <i class="heart__icon fa-regular fa-heart"></i>
+                                <i class="heart__icon-hidden fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
                 </div>
                 <!-- CARD-2 -->
                 <div class="card">
-                    <a href="la-note-enchanter.html" class="card__link">
+                    <a href="html/la-note-enchanter.html" class="card__link">
                         <img class="card__img card__img-dif"
                             src="./pictures/restaurants-width-600px/stil-compressed.webp" alt="photo restaurant">
                         <div class="card__new">Nouveau</div>
                         <div class="card__contents">
                             <div class="card__text">
                                 <h3 class="card__heading">La note enchantée</h3>
-                                <p class="card__paragraph">Charonne</p>
+                                <p class="card__p">Charonne</p>
                             </div>
                             <div class="heart">
-                                <i class="heart__icon fa-regular fa-heart"><i
-                                        class="heart__icon-hidden fa-solid fa-heart"></i></i>
+                                <i class="heart__icon fa-regular fa-heart"></i>
+                                <i class="heart__icon-hidden fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
                 </div>
                 <!-- CARD-3 -->
                 <div class="card">
-                    <a href="a-la-francaise.html" class="card__link">
+                    <a href="html/a-la-francaise.html" class="card__link">
                         <img class="card__img" src="./pictures/restaurants-width-600px/toa-heftiba-compressed.webp"
                             alt="photo restaurant">
                         <!-- <div class="card__new">Nouveau</div> -->
                         <div class="card__contents">
                             <div class="card__text">
                                 <h3 class="card__heading">À la française</h3>
-                                <p class="card__paragraph">Cité Rouge</p>
+                                <p class="card__p">Cité Rouge</p>
                             </div>
                             <div class="heart">
-                                <i class="heart__icon fa-regular fa-heart"><i
-                                        class="heart__icon-hidden fa-solid fa-heart"></i></i>
+                                <i class="heart__icon fa-regular fa-heart"></i>
+                                <i class="heart__icon-hidden fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
                 </div>
                 <!-- CARD-4 -->
                 <div class="card">
-                    <a href="le-delice-des-sens.html" class="card__link">
+                    <a href="html/le-delice-des-sens.html" class="card__link">
                         <img class="card__img" src="./pictures/restaurants-width-600px/louis-hansel-compressed.webp"
                             alt="photo restaurant">
-                        <!-- <div class="card__new">Nouveau</div> -->
+                        <div class="card__new">Nouveau</div>
                         <div class="card__contents">
                             <div class="card__text">
                                 <h3 class="card__heading">Le délice des sens</h3>
-                                <p class="card__paragraph">Folie-Méricourt</p>
+                                <p class="card__p">Folie-Méricourt</p>
                             </div>
                             <div class="heart">
-                                <i class="heart__icon fa-regular fa-heart"><i
-                                        class="heart__icon-hidden fa-solid fa-heart"></i></i>
+                                <i class="heart__icon fa-regular fa-heart"></i>
+                                <i class="heart__icon-hidden fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
