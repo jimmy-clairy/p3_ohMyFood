@@ -2,12 +2,20 @@
     position: relative;
     cursor: pointer;
 
-    &:hover>.heart__icon,
+    @include breakpointMedium {
+        &:hover>.heart__icon {
+            opacity: 0;
+        }
+
+        &:hover>.heart__icon-hidden {
+            opacity: 1;
+        }
+    }
+
     &.active>.heart__icon {
         opacity: 0;
     }
 
-    &:hover>.heart__icon-hidden,
     &.active>.heart__icon-hidden {
         opacity: 1;
     }
