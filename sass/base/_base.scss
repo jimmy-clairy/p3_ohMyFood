@@ -19,3 +19,13 @@ a {
     display: block;
     color: $cl-fourth;
 }
+
+input,
+div,
+textarea,
+button,
+select,
+details,
+a {
+    -webkit-tap-highlight-color: transparent;
+}

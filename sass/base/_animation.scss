@@ -43,26 +43,42 @@
 }
 
 // ANIMATION-VALIDATION
+@include breakpointMedium {
+    .submenu__container:hover {
+        & .submenu__content {
+            width: calc(100% - 10rem);
+        }
 
-.submenu__container:hover,
+        & .submenu__price {
+            transform: translateX(-6rem);
+        }
+
+        & .animation {
+            transform: translateX(-100%);
+
+            & .animation__icon {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
 .submenu__container.active {
-
-    &>.submenu__content {
+    & .submenu__content {
         width: calc(100% - 10rem);
     }
 
-    &>.submenu__price {
+    & .submenu__price {
         transform: translateX(-6rem);
     }
 
-    &>.animation {
+    & .animation {
         transform: translateX(-100%);
 
-        &>.animation__icon {
+        & .animation__icon {
             transform: rotate(0deg);
         }
     }
-
 }
 
 .animation {
